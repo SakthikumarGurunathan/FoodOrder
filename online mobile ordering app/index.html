@@ -1,0 +1,42 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="my-all">
+            <header>
+                <img src="images/header.png" >
+            </header> 
+            <main>
+                <div class="menu" id="menu">
+                    <!-- Items here!! -->
+                </div>
+                <div class="your-order display-none">
+                    <div class="your-order-title">
+                        <h1 class="your-order-header">Your Order</h1>
+                    </div>
+                    <div class="order-details">
+                        
+                    </div>
+                    <div class="splitter"></div>
+                    <div class="total-price"></div>
+                    <button class="complete-order" id="complete-order">Complete Order</button>
+                </div>
+                <div class="order-finish display-none"></div>
+            </main>
+            <div class="card-details-modal display-none" id="card-details-modal">
+                    <form id="card-form">
+                        <h1>Enter card details</h1>
+                        <input type="text" name="fullName" placeholder="Your name" required>
+                        <input type="tel" name="cardNumber" placeholder="Card number" maxlength="16" minlength="8" required>
+                        <input type="tel" name="CVV" placeholder="CVV" maxlength="3"
+                        minlength="3" required>
+                        <button type="submit" id="payBtn">Pay</button>
+                    </form>
+            </div>
+        </div>   
+	    <script src="index.js" type="module"></script>
+    </body>
+</html>
+
